@@ -240,7 +240,10 @@ public class CacheBuster {
   }
 
   public FileSet createFileset() {
-    return new FileSet();
+    FileSet fileSet = new FileSet();
+    this.fileSets.add(fileSet);
+
+    return fileSet;
   }
 
   public CacheBusterRule createRule() {
