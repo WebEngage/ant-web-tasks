@@ -51,7 +51,10 @@ public class Inject {
     }
 
     public FileSet createFileset() {
-        return new FileSet();
+        FileSet fileSet = new FileSet();
+        this.fileSets.add(fileSet);
+
+        return fileSet;
     }
 
     public void init() {
